@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const Statistics = (props) => {
     const { good, neutral, bad, total, positivePercentage } = props;
 
@@ -21,5 +23,13 @@ const Statistics = (props) => {
         </ul>
     );
 }
+
+Statistics.propTypes = {
+  good: PropTypes.number.isRequired,
+  neutral: PropTypes.number.isRequired,
+  bad: PropTypes.number.isRequired,
+  total: PropTypes.number.isRequired,
+  positivePercentage: PropTypes.number.isRequired,
+};
 
 export default Statistics;

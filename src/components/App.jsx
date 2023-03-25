@@ -37,10 +37,8 @@ class App extends Component {
       <div
         style={{
           height: '100vh',
-          // display: 'flex',
-          // justifyContent: 'center',
-          // alignItems: 'center',
-          fontSize: 40,
+          marginLeft: '100px',
+          fontSize: 32,
           color: '#010101',
         }}
       >
